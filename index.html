@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE ahtml>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -14,26 +14,24 @@
     
     <style>
         /* General styles and responsive design */
-        /* --- FIX for Google Sites Embed Gaps --- */
-        html, body {
+        /* --- A more aggressive FIX for Google Sites Embed Gaps --- */
+        body {
+            background-color: #f7e6e6;
+            font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            height: 100%; /* Forces the page to take up 100% of the viewport height */
-            width: 100%; /* Forces the page to take up 100% of the viewport width */
+            min-height: 100vh; /* This is the key fix to force the height */
+            width: 100%;
             overflow-x: hidden;
             position: relative;
         }
 
-        body {
-            background-color: #f7e6e6;
-            font-family: 'Inter', sans-serif;
-        }
-        .content-container {
-            height: 100%; /* Ensures the content container also fills the space */
+        .main-content {
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
+
         /* --- END FIX --- */
 
         /* --- Aura Effect for Ganesh GIF --- */
@@ -81,7 +79,7 @@
             25% { transform: rotateZ(1.5deg); }
             50% { transform: rotateZ(0deg); }
             75% { transform: rotateZ(-1.5deg); }
-            to { transform: scale3d(1, 1, 1); }
+            to { transform: rotateZ(0); }
         }
         
         /* Side-scrolling banner styles for a truly seamless loop */
@@ -188,7 +186,7 @@
 
 <body>
     <!-- Main content container -->
-    <div class="content-container">
+    <div class="main-content">
         <center>
             <div style="color: #ff077a;"> ▂ ▄ ▅ ▆ ▇ गणेश चतुर्थी की हार्दिक शुभकामनाएँ ▇ ▆ ▅ ▄ ▂ </div>
         </center>
