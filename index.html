@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+    <title>Happy Ganesh Chaturthi! | गणेश चतुर्थी की हार्दिक शुभकामनाएँ </title>
+    <meta name="google" value="notranslate">
+    <meta property="og:type" content="Make your own wonderful Wishing greeting card" />
+    <meta property="og:title" content="Wishing You Happy Ganesh Chaturthi!" />
+    <meta property="og:url" content="https://www.ganeshwishes.ooo/" />
+    <meta property="og:description" content="CLICK HERE" />
+    <meta property="og:site_name" content="Create Awesome Wishing Card" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://3.bp.blogspot.com/-gsVZJB-p1h8/W0z6Ted79nI/AAAAAAAACqo/yKypWPVJC_MG6rXeAJZ1rL0sA0ug02cqwCLcBGAs/s1600/wp.png">
+    
+    <style>
+        /* General styles and responsive design */
+        body {
+            background-color: #f7e6e6;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* --- Aura Effect for Ganesh GIF --- */
+        .ganesh-aura {
+            animation: aura-pulse 2s infinite ease-in-out;
+            border-radius: 50%; /* To apply the shadow correctly */
+        }
+        @keyframes aura-pulse {
+            0% {
+                box-shadow: 0 0 5px 5px rgba(255, 204, 0, 0.4), 0 0 10px 10px rgba(255, 179, 0, 0.2);
+            }
+            50% {
+                box-shadow: 0 0 10px 10px rgba(255, 204, 0, 0.6), 0 0 20px 20px rgba(255, 179, 0, 0.4);
+            }
+            100% {
+                box-shadow: 0 0 5px 5px rgba(255, 204, 0, 0.4), 0 0 10px 10px rgba(255, 179, 0, 0.2);
+            }
+        }
+
+        /* --- Share Button Styles --- */
+        .share-button {
+            display: block;
+            margin: 20px auto; /* Centers the button */
+            padding: 5px;
+            background: #34af23;
+            color: #ffffff;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            width: 90%;
+            max-width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .3);
+            animation: footer infinite linear 1s;
+        }
+        .share-button img {
+            vertical-align: middle;
+        }
+
+        /* --- Other existing styles from previous version --- */
+        i { color: #ff2323; }
+        .footerbtn:active { box-shadow: none; }
+        @keyframes footer {
+            from { transform: rotateZ(0); }
+            25% { transform: rotateZ(1.5deg); }
+            50% { transform: rotateZ(0deg); }
+            75% { transform: rotateZ(-1.5deg); }
+            to { transform: rotateZ(0); }
+        }
+        
+        /* Side-scrolling banner styles for a truly seamless loop */
+        .scrolling-container {
+            position: fixed;
+            top: 0;
+            width: 60px;
+            height: 100vh;
+            overflow: hidden;
+            z-index: 10;
+        }
+        .scrolling-container.left { left: 1%; }
+        .scrolling-container.right { right: 1%; }
+        .scrolling-content {
+            display: flex;
+            flex-direction: column;
+            /* The combined height of the duplicated content for the seamless loop */
+            height: auto; 
+        }
+        
+        /* The core animation that creates a perfectly continuous loop. 
+           It moves the content up by exactly the full height of one set of images. */
+        @keyframes seamless-scroll {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100%); }
+        }
+
+        /* Apply the single seamless animation. The right banner scrolls up... */
+        .scrolling-container.right .scrolling-content { 
+            animation: seamless-scroll 30s linear infinite; 
+        }
+        /* ...and the left banner scrolls down by running the same animation in reverse. */
+        .scrolling-container.left .scrolling-content { 
+            animation: seamless-scroll 30s linear infinite reverse; 
+        }
+        
+        .scrolling-content img {
+            width: 50px;
+            height: 50px;
+            margin: 5px 0;
+        }
+
+        /* --- NEW Preloader Styles --- */
+        .cssload-preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99;
+            flex-direction: column;
+        }
+        .cssload-preloader-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allows text to wrap on smaller screens */
+            max-width: 90%;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+        }
+        .cssload-preloader-box div {
+            font-size: 2.5em;
+            color: #FF9933;
+            animation: text-float 1.5s infinite;
+            padding: 5px;
+        }
+        /* Individual animation delays for each letter */
+        .cssload-preloader-box div:nth-child(2) { animation-delay: 0.1s; }
+        .cssload-preloader-box div:nth-child(3) { animation-delay: 0.2s; }
+        .cssload-preloader-box div:nth-child(4) { animation-delay: 0.3s; }
+        .cssload-preloader-box div:nth-child(5) { animation-delay: 0.4s; }
+        .cssload-preloader-box div:nth-child(6) { animation-delay: 0.5s; }
+        .cssload-preloader-box div:nth-child(7) { animation-delay: 0.6s; }
+        .cssload-preloader-box div:nth-child(8) { animation-delay: 0.7s; }
+        .cssload-preloader-box div:nth-child(9) { animation-delay: 0.8s; }
+        .cssload-preloader-box div:nth-child(10) { animation-delay: 0.9s; }
+        .cssload-preloader-box div:nth-child(11) { animation-delay: 1.0s; }
+        .cssload-preloader-box div:nth-child(12) { animation-delay: 1.1s; }
+        .cssload-preloader-box div:nth-child(13) { animation-delay: 1.2s; }
+        .cssload-preloader-box div:nth-child(14) { animation-delay: 1.3s; }
+        .cssload-preloader-box div:nth-child(15) { animation-delay: 1.4s; }
+        .cssload-preloader-box div:nth-child(16) { animation-delay: 1.5s; }
+        .cssload-preloader-box div:nth-child(17) { animation-delay: 1.6s; }
+        .cssload-preloader-box div:nth-child(18) { animation-delay: 1.7s; }
+        .cssload-preloader-box div:nth-child(19) { animation-delay-0.1s; }
+        .cssload-preloader-box div:nth-child(20) { animation-delay: 0.1s; }
+        .cssload-preloader-box div:nth-child(21) { animation-delay: 0.1s; }
+        
+        @keyframes text-float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* --- Curtain Styles --- */
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            bottom:0;
+            width: 50%;
+            height: 100%;
+            z-index: 1000;
+            background: url(https://blogger.googleusercontent.com/img/a/AVvXsEgIzKzVb4ANAf4zCwsB3Uoega950NcCr8RpDRsd09sdrL120eC-cTDLTt0Q8ELHDj-J1yR6BxLDng5QqToeyvQIQcf65aYrIG8sRVkKo9abHzihRGv0e2qucydfwXbVPEugJFYmNvgXQmibo_ZDBQLw6Io0QwHKFV6BKuBOqolIiGtlEk30caQx5CO=s420) center no-repeat fixed ;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: all 1s ease-in-out;
+        }
+        .se-pre-con-right {
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            bottom:0;
+            width: 50%;
+            height: 100%;
+            z-index: 1000;
+            background: url(https://blogger.googleusercontent.com/img/a/AVvXsEgIzKzVb4ANAf4zCwsB3Uoega950NcCr8RpDRsd09sdrL120eC-cTDLTt0Q8ELHDj-J1yR6BxLDng5QqToeyvQIQcf65aYrIG8sRVkKo9abHzihRGv0e2qucydfwXbVPEugJFYmNvgXQmibo_ZDBQLw6Io0QwHKFV6BKuBOqolIiGtlEk30caQx5CO=s420) center no-repeat fixed ;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: all 1s ease-in-out;
+        }
+        .se-pre-con-image {
+            position: fixed;
+            padding:10px;
+            right: 0;
+            left: 0;
+            z-index: 1001;
+            top: 35%; /* Adjusting position to be more centered */
+            text-align: center;
+        }
+
+        @keyframes tada {
+            from { transform: scale3d(1, 1, 1); }
+            10%, 20% { transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
+            30%, 50%, 70%, 90% { transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
+            40%, 60%, 80% { transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
+            to { transform: scale3d(1, 1, 1); }
+        }
+
+        /* Classes to open the curtains */
+        .curtain-open-left {
+            transform: translateX(-100%);
+        }
+        .curtain-open-right {
+            transform: translateX(100%);
+        }
+        .curtain-image-hide {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* Countdown timer styles */
+        .countdown {
+            text-align: center;
+            margin: 20px auto;
+            color: #5d3511;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .countdown h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .countdown span {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 5px 10px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* New image container for responsiveness (updated) */
+        .ganesh-images {
+            display: flex;
+            flex-direction: column; /* This stacks them vertically */
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .ganesh-images img {
+            width: 100%;
+            max-width: 200px; /* Controls the size of each image */
+            height: auto;
+            margin: 10px 0; /* Updated margin for vertical spacing */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: float 3s ease-in-out infinite; /* Animation applied to each image */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .ganesh-images img:hover {
+            transform: scale(1.05); /* Slight pop-out effect on hover */
+        }
+        
+        /* New keyframes for the floating animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Style for the newly added centered image */
+        .centered-image {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- New Curtain Feature from user's code -->
+    <div id="scriptaccesory"></div>
+    <div class="se-pre-con-right" id="se-pre-con-right" ></div>
+    <div class="se-pre-con" id="se-pre-con" ></div>
+    <div id="openscript" class="se-pre-con-image text-center" onclick="openCurtains()">
+        <div class="curtainoverlay">
+            <div id="hkcurtainart" style="color:;">
+                👇👇 <br>Touch the symbol !<br>
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhK82RSNKHL3iaVKDRvGMbdNHHEzDlaJy37Ku6zPvggfrvhN2R420luZNDvVSwcw9wgLaQjTGPqj2Fa709VatyRRdLr3d4Rh31i-IawX71t2jUI_DnhVjzMTYRkzbhE58dsRBt9wBmArBcVazOm_lqhmZS0rlnWeuVm-ZzaKu18l1qQ8dYtfSJuMDm8=s200" id="gifovercurtain" style="animation: tada 4s infinite;width: 100%; max-width:200px; " />
+            </div>
+        </div>
+    </div>
+
+    <!-- NEW Preloader/Loader section -->
+    <div id="loader" class="cssload-preloader">
+        <div class="cssload-preloader-box">
+            <div>G</div>
+            <div>A</div>
+            <div>N</div>
+            <div>E</div>
+            <div>S</div>
+            <div>H</div>
+            <div> </div>
+            <div>C</div>
+            <div>H</div>
+            <div>A</div>
+            <div>T</div>
+            <div>U</div>
+            <div>R</div>
+            <div>T</div>
+            <div>H</div>
+            <div>I</div>
+            <div> </div>
+            <div>2</div>
+            <div>0</div>
+            <div>2</div>
+            <div>5</div>
+        </div>
+    </div>
+
+    <!-- Side scrolling banners using modern CSS -->
+    <div class="scrolling-container left">
+        <div class="scrolling-content">
+            <!-- First set of images -->
+            <img src="https://1.bp.blogspot.com/-z57aGOns1AY/W1jDhMtiJLI/AAAAAAAACzY/gHl07rOp3GwoUUVsT8IjXViQNu4_HLG7QCLcBGAs/s1600/a.png" alt="Ganesha Icon" />
+            <img src="https://png.pngtree.com/png-vector/20240813/ourmid/pngtree-hand-drawn-modak-illustration-png-image_13470579.png" alt="Modak Icon" />
+            <img src="https://png.pngtree.com/png-clipart/20221012/original/pngtree-diwali-diya-icon-vector-png-image_8676869.png" alt="Diya Icon" />
+            <img src="https://png.pngtree.com/png-clipart/20240829/original/pngtree-pooja-plate-and-kalash-with-flowers-sweets-png-image_15877906.png" alt="Pooja Plate Icon" />
+            <!-- Duplicated set of images for seamless loop -->
+            <img src="https://1.bp.blogspot.com/-z57aGOns1AY/W1jDhMtiJLI/AAAAAAAACzY/gHl07rOp3GwoUUVsT8IjXViQNu4_HLG7QCLcBGAs/s1600/a.png" alt="Ganesha Icon" />
+            <img src="https://png.pngtree.com/png-vector/20240813/ourmid/pngtree-hand-drawn-modak-illustration-png-image_13470579.png" alt="Modak Icon" />
+            <img src="https://png.pngtree.com/png-clipart/20221012/original/pngtree-diwali-diya-icon-vector-png-image_8676869.png" alt="Diya Icon" />
+            <img src="https://png.pngtree.com/png-clipart/20240829/original/pngtree-pooja-plate-and-kalash-with-flowers-sweets-png-image_15877906.png" alt="Pooja Plate Icon" />
+        </div>
+    </div>
+    <div class="scrolling-container right">
+        <div class="scrolling-content">
+            <!-- First set of images -->
+            <img src="https://1.bp.blogspot.com/-z57aGOns1AY/W1jDhMtiJLI/AAAAAAAACzY/gHl07rOp3GwoUUVsT8IjXViQNu4_HLG7QCLcBGAs/s1600/a.png" alt="Ganesha Icon" />
+            <img src="https://png.pngtree.com/png-vector/20240813/ourmid/pngtree-hand-drawn-modak-illustration-png-image_13470579.png" alt="Modak Icon" />
+            <img src="https://png.pngtree.com/png-clipart/20221012/original/pngtree-diwali-diya-icon-vector-png-image_8676869.png" alt="Diya Icon" />
+            <img src="https://png.pngtree.com/png-clipart/20240829/original/pngtree-pooja-plate-and-kalash-with-flowers-sweets-png-image_15877906.png" alt="Pooja Plate Icon" />
+            <!-- Duplicated set of images for seamless loop -->
+            <img src="https://1.bp.blogspot.com/-z57aGOns1AY/W1jDhMtiJLI/AAAAAAAACzY/gHl07rOp3GwoUUVsT8IjXViQNu4_HLG7QCLcBGAs/s1600/a.png" alt="Ganesha Icon" />
+            <img src="https://png.pngtree.com/png-vector/20240813/ourmid/pngtree-hand-drawn-modak-illustration-png-image_13470579.png" alt="Modak Icon" />
+            <img src="https://png.pngtree.com/png-clipart/20221012/original/pngtree-diwali-diya-icon-vector-png-image_8676869.png" alt="Diya Icon" />
+            <img src="https://png.pngtree.com/png-clipart/20240829/original/pngtree-pooja-plate-and-kalash-with-flowers-sweets-png-image_15877906.png" alt="Pooja Plate Icon" />
+        </div>
+    </div>
+
+    <!-- Main content container -->
+    <div class="content-container">
+        <center>
+            <div style="color: #ff077a;"> ▂ ▄ ▅ ▆ ▇ गणेश चतुर्थी की हार्दिक शुभकामनाएँ ▇ ▆ ▅ ▄ ▂ </div>
+        </center>
+        
+        <!-- Countdown timer -->
+        <div class="countdown">
+            <h2>Time to Ganesh Chaturthi</h2>
+            <p id="countdown-timer"></p>
+        </div>
+
+        <div style="text-align: center;">
+            <!-- Newly added image -->
+            <img src="https://i.pinimg.com/originals/e1/93/18/e1931855cca422a0fbe4ff517a23022a.png" class="centered-image" alt="Ganesh Tika" />
+
+            <br>
+            <p style="text-align: center;">
+                <strong>
+                    <span id="wishingText">
+                        <span style="font-size: 26pt; font-family: 'comic sans ms', sans-serif; color: #ff0044;">
+                            <span style="font-family: 'trebuchet ms', geneva;">HAPPY</span>
+                        </span>
+                    </span>
+                </strong>
+            </p>
+            <h3 style="font-size: 26pt; font-family: 'comic sans ms', sans-serif; color: #ff0044; margin: 0; padding: 0;">GANESH CHATURTHI 2025</h3>
+            <br> </br>
+            
+            <div class="ganesh-images">
+                <img src="https://createcustomwishes.com/animated-wishes/ganesh-chaturthi-gif-wishes/img/Ganesh-Chaturthi-WhatsApp-Status.gif" alt="Lord Ganesh GIF" />
+                <img src="https://happythanksgivingtoall.com/wp-content/uploads/2024/09/Happy-Ganesh-Chaturthi-GIFs.gif" alt="Lord Ganesh GIF" />
+                <img src="https://indiater.com/wp-content/uploads/2018/09/best-ganesh-chaturthi-images-for-whatsapp-wishes-free.jpg" alt="Lord Ganesh Image" />
+            </div>
+
+            <p style="text-align: center;">
+                <span style="background-color: #FF9933; color: #ffffff; font-size: 14pt; font-family: tahoma, arial, helvetica, sans-serif;">&nbsp;May the blessings of Lord Ganesh &nbsp;</span>
+            </p>
+            <p style="text-align: center;">
+                <span style="background-color: #000080; color: #ffffff; font-size: 14pt; font-family: tahoma, arial, helvetica, sans-serif;">&nbsp;bring prosperity and happiness &nbsp;</span>
+            </p>
+            <p style="text-align: center;">
+                <span style="background-color: #000080; color: #ffffff; font-size: 14pt; font-family: tahoma, arial, helvetica, sans-serif;">&nbsp;to your home and family. &nbsp;</span>
+            </p>
+            <p style="text-align: center;">
+                <span style="background-color: #138808; color: #ffffff; font-size: 14pt; font-family: tahoma, arial, helvetica, sans-serif;">&nbsp;Happy Ganesh Chaturthi!&nbsp;</span>
+            </p>
+            
+            <center>
+                <a class="share-button" id="whatsappShareLink" href="whatsapp://send?text=Happy Ganesh Chaturthi! %E2%9C%85%0A%0A%E2%96%B6%E2%96%B6%E2%96%B6%E2%96%B6%20Wishing you a joyful celebration!%26url=https://www.ganeshwishes.ooo/">
+                    <img width="22px" height="22px" src="https://3.bp.blogspot.com/-gsVZJB-p1h8/W0z6Ted79nI/AAAAAAAACqo/yKypWPVJC_MG6rXeAJZ1rL0sA0ug02cqwCLcBGAs/s1600/wp.png"/>  
+                    <b style="font-size: 26px;">Share on Whatsapp</b>  
+                    <img width="25px" height="25px" src="https://media.giphy.com/media/l0HlPwaB3xP9w6uYw/giphy.gif"/>
+                </a>
+            </center>
+        </div>
+    </div>
+    
+    <script>
+        // Hides the main loader once the page content has loaded.
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            // Adding a delay so the preloader animation is visible to the user.
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 2000); // 2-second delay
+        });
+
+        // Function to open the curtains
+        function openCurtains() {
+            const leftCurtain = document.getElementById('se-pre-con');
+            const rightCurtain = document.getElementById('se-pre-con-right');
+            const curtainImage = document.getElementById('openscript');
+
+            // Add classes to trigger the animation
+            leftCurtain.classList.add('curtain-open-left');
+            rightCurtain.classList.add('curtain-open-right');
+            curtainImage.classList.add('curtain-image-hide');
+
+            // Hide the curtain container after the transition
+            setTimeout(() => {
+                leftCurtain.style.display = 'none';
+                rightCurtain.style.display = 'none';
+                curtainImage.style.display = 'none';
+            }, 1000); // Match the CSS transition duration
+        }
+
+        // Countdown timer and "ADVANCE" text logic
+        function startCountdown() {
+            const countdownDate = new Date("Aug 27, 2025 00:00:00").getTime();
+            const wishingTextElement = document.getElementById('wishingText');
+
+            const x = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = countdownDate - now;
+                
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById("countdown-timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                if (distance > 0) {
+                    // Show "ADVANCE" before "HAPPY" if the date hasn't passed
+                    wishingTextElement.innerHTML = `
+                        <span style="font-size: 26pt; font-family: 'comic sans ms', sans-serif; color: #ff0044;">
+                            <span style="font-family: 'trebuchet ms', geneva;">ADVANCE HAPPY</span>
+                        </span>
+                    `;
+                } else {
+                    // Show only "HAPPY" if the date has passed
+                    clearInterval(x);
+                    document.getElementById("countdown-timer").innerHTML = "Happy Ganesh Chaturthi!";
+                    wishingTextElement.innerHTML = `
+                        <span style="font-size: 26pt; font-family: 'comic sans ms', sans-serif; color: #ff0044;">
+                            <span style="font-family: 'trebuchet ms', geneva;">HAPPY</span>
+                        </span>
+                    `;
+                }
+            }, 1000);
+        }
+
+        // Start the countdown when the page loads
+        startCountdown();
+
+    </script>
+</body>
+</html>
